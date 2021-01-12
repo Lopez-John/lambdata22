@@ -5,7 +5,7 @@ import numpy as np
 from datetime import datetime as dt
 
 
-class NewDataFrame(DataFrame):
+class NewDataFrame(pd.DataFrame):
     def nullcount(self):
         return self.isnull().sum().sum()
 
