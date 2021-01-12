@@ -29,7 +29,7 @@ def split_dates(date_series):
     then return the same dataframe with those additional columns"""
 
     # converts dates to datetime
-    date_series["date"] = date_series["date"].apply(pd.to_datetime)
+    date_series['date'] = date_series["date"].apply(pd.to_datetime)
 
     # creates a month, day, and year column
     date_series['Month'] = date_series['date'].dt.month
