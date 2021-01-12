@@ -51,7 +51,15 @@ class Animal:
         return 'Huge fan of that ' + food
 
 class Sloth(Animal): # class inheritence
-    pass
+    def __init__(self, name, weight, diet_type, num_naps=104):
+        super().__init__(name, weight, diet_type)
+        self.num_naps = float(num_naps)
+    
+    def eat(self):
+        return "I LIKE LEAVVES"
+
+    def say_something(self):
+        return 'This is a sloth of typing'
 
 
 
@@ -74,5 +82,5 @@ if __name__ == "__main__":
     pirnt(user1.is_popular())
     print(user2.is_popular())
     user2.receive_upvotes(101)
-    print('received {} upvaltes'.format(user2.upvotes))
+    print('received {} upvotes'.format(user2.upvotes))
     print(user2.is_popular())
