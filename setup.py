@@ -4,15 +4,14 @@ import setuptools
 
 REQUIRED = ['numpy',
             'pandas',
-            'datetime'
             ]
 
 with open('README.md', 'r') as fh:
     LONG_DESCRIPTION = fh.read()
 
 setuptools.setup(
-    name='lambdata_new',
-    version='0.0.1',
+    name='NewLambdata',
+    version='0.0.2',
     author='Lopez-John',
     description=LONG_DESCRIPTION,
     url="https://github.com/Lopez-John/lambdata22.git",
