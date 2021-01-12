@@ -11,7 +11,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='NewLambdata',
-    version='0.0.2',
+    version='0.0.4',
     author='Lopez-John',
     description=LONG_DESCRIPTION,
     url="https://github.com/Lopez-John/lambdata22.git",

@@ -18,7 +18,7 @@ class NewDataFrame(DataFrame):
         self['date'] = self['date'].apply(pd.to_datetime)
         self['Month'] = self['date'].dt.month
         self['Day'] = self['date'].dt.day
-        self['Year'] = self['date'].dt.Year
+        self['Year'] = self['date'].dt.year
         return self
 
 
