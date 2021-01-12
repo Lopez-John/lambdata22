@@ -1,11 +1,8 @@
-"""Lambdata - A collection of Data Science Helper functions"""
+"""LambdataJohnLopez - A collection of Data Science Helper functions"""
 
 import pandas as pd
 import numpy as np
 from datetime import datetime as dt
-
-FAVORITE_ANIMALS = ["Cheetah", "Sloth", "Tree Frog", "Zebra"]
-
 
 def null_count(df):
     """Checks the Dataframe for null values and
@@ -58,6 +55,6 @@ def train_test_split(df, frac):
 def randomize(df):
     """Develop a randomization function that randomizes all of a
     dataframes cells then returns that randomized dataframe"""
-df_shuffled = df.iloc[np.random.permutation(df.index)]
-df_shuffled.reset_index(drop=True)
-return df_shuffled
+    df_shuffled = df.iloc[np.random.permutation(df.index)]
+    df_shuffled.reset_index(drop=True)
+    return df_shuffled
