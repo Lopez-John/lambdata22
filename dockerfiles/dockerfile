@@ -1,0 +1,8 @@
+FROM ubuntu
+
+ENV PYTHONUNBUFFERED=1
+RUN apt update && \
+    apt upgrade -y && \
+    apt install python 3 python 3-pipcurl -y && \
+    pip3 install pandas numpy && \
+    pip3 install -i https://test.pypi.org/simple/ NewLambdata
